@@ -26,8 +26,7 @@ function About() {
                             <h2 className="about-title"><u>About Me:</u></h2>
                         </div>
                         <div>
-                            <p className="about-par">I am a software engineer pivoting my career from the 
-                            mechanical engineering industry. I have developed a new passion to continuously learn and improve
+                            <p className="about-par">I am an engineer with a mechanical engineering degree who has developed a passion to continuously learn and improve
                             new software development skills daily! In my free time, I enjoy hiking, traveling, and watching 
                             movies/shows with my family. In addition, I am a purple belt in brazilian jiu-jitsu and enjoy 
                             playing games with friends.</p>
@@ -84,6 +83,8 @@ function About() {
                             <a target="blank" href="https://www.udemy.com/course/the-complete-web-development-bootcamp/"> online Full-Stack bootcamp by Udemy. </a> 
                             This course has introduced me to many wed development concepts and techniques. I plan 
                             to complete this course and continue my path to grow in the software development world.</p>
+                            <br></br>
+                            <p><a href="./Images/MR_resume.pdf" download="mRogerResume">Click to download my resume!</a></p>
                         </div>
                         
                     </div>

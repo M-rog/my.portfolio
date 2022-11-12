@@ -24,7 +24,7 @@ function NavIntro() {
                             <Navbar.Brand href="#home">Matt.</Navbar.Brand>
                             <Nav className="ms-auto">
                                 <Nav.Link href="#About">About</Nav.Link>
-                                <Nav.Link href="#Projects">Projects along the Way</Nav.Link>
+                                <Nav.Link href="#Projects">Sample JS Projects</Nav.Link>
                                 <Nav.Link href="#Skills">Skills/Experience</Nav.Link>
                                 <Nav.Link href="#Testimonials">Testimonials</Nav.Link>
                                 <Nav.Link href="#Contact">Contact Me</Nav.Link>
@@ -40,7 +40,7 @@ function NavIntro() {
                         <img src="" alt="person"></img>
                     </div>
                     <div className="col-lg-4">
-                        <h1 className="intro-title">Welcome! <br></br> I'm Matt Roger, a Software Engineer.</h1>
+                        <h1 className="intro-title">Welcome! <br></br> I'm Matt Roger, a Mechanical / Software Engineer.</h1>
                     </div>
                     <div className="col-lg-4 col-md-12">
                         <img className='matt-photo' src={cliffsPhoto} alt="person" width="400" height="300"></img>
