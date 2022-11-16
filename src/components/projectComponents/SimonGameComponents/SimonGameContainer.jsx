@@ -4,6 +4,7 @@ import { useState } from "react";
 
 function SimonGameContainer() {
 
+
     const [start, handleStart] = useState(false);
 
     const [level, handleLevel] = useState(0);
@@ -14,43 +15,25 @@ function SimonGameContainer() {
     const colors =["green" , "red" , "yellow" , "blue"];
 
 
-
-
+    
     function startGame() {
-
         handleStart(true);
-        nextSequence();
-        
-        // console.log("game started");
+        nextSequence(); 
     }
-
-
-    // function nextSequence() {
-
-    //     userClickedPattern = [];
-    //     level++;
-    //     $("#level-title").text("Level " + level);
-      
-    //     var randomNumber = Math.floor(Math.random() * 4);
-    //     var randomChosenColour = buttonColours[randomNumber];
-    //     gamePattern.push(randomChosenColour);
-      
-    //     $("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
-    //     playSound(randomChosenColour);
-    //   }
 
 
     function nextSequence() {
         handleUserArray([]);
         handleLevel(+1);
         let rngColor = colors[Math.floor(Math.random()*4)];
-        // console.log(rngColor);
-        handleGameArray((prevValues, rngColor) => [...prevValues, rngColor]);
+        handleGameArray((prevValues) => [...prevValues, rngColor]);
     }
 
 
     function userSelection(e) {
-        let userChosenColor = e.target.value;
+        
+        let userChosenColor = e.target.id;
+
         handleUserArray((prevValues) => [...prevValues, userChosenColor]);
 
         // pressAnimation();
@@ -79,7 +62,6 @@ function SimonGameContainer() {
       }
 
 
-
     // function pressAnimation() {
 
     // }
@@ -101,9 +83,9 @@ function SimonGameContainer() {
 
             <h1 hidden={!start ? "hidden" : null}>Level {level}</h1>
 
-            <div className="container ">
+            <div className="container">
                 
-                <div className="row sg-container justify-content-center">
+                <div className="row sg-container">
 
                     <div className="col-6">
 
@@ -111,11 +93,7 @@ function SimonGameContainer() {
                             className="sg-btn green"
                             type="button" 
                             id="green" 
-                            onClick={() => 
-                                (id) => userSelection(id)
-                            
-                        }
-                            // console.log(id);
+                            onClick={(id) => userSelection(id)}
                             >
                         </div>
 
@@ -128,7 +106,6 @@ function SimonGameContainer() {
                             type="button" 
                             id="red" 
                             onClick={(id) => userSelection(id)}
-                            // console.log(id);
                             >
                         </div>
 
