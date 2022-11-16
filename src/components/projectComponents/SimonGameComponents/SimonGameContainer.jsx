@@ -122,7 +122,6 @@ function SimonGameContainer() {
                             type="button" 
                             id="yellow" 
                             onClick={(id) => userSelection(id)}
-                            // console.log(id);
                             >
                         </div>
 
@@ -135,7 +134,6 @@ function SimonGameContainer() {
                             type="button" 
                             id="blue" 
                             onClick={(id) => userSelection(id)}
-                            // console.log(id);
                             >
                         </div>
 
