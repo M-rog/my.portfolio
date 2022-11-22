@@ -13,17 +13,23 @@ function About() {
 
                 <div className="row">
 
-                    {/* About Me Sub-Section */}
+                    <h1 className="icon-color"><u>About Me:</u></h1>
+
+                </div>
+
+                <div className="row">
+
+                    {/* Summary Sub-Section */}
 
                     <div className="col-lg-4 about-section">
-                        <div className="about-icon-color">
+                        <div className="icon-color">
 
                             {/* Bootstrap Human Icon */}
                             <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                                 <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
                                 <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
                             </svg>
-                            <h2 className="about-title"><u>About Me:</u></h2>
+                            <h2 className="about-title"><u>Summary:</u></h2>
                         </div>
                         <div>
                             <p className="about-par">I am an engineer with a mechanical engineering degree who has developed a passion to continuously learn and improve
@@ -37,7 +43,7 @@ function About() {
                     {/* Philosophy Sub-Section */}
 
                     <div className="col-lg-4 about-section phil-section">
-                        <div className="about-icon-color">
+                        <div className="icon-color">
 
                             {/* Book Icon */}
                             <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
@@ -62,7 +68,7 @@ function About() {
                     {/* Credentials Sub-Section */}
 
                     <div className="col-lg-4 about-section">
-                        <div className="about-icon-color">
+                        <div className="icon-color">
 
                             {/* Graduation Hat Icon */}
                             <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-mortarboard" viewBox="0 0 16 16">
@@ -76,7 +82,6 @@ function About() {
                             with a Bachelors of Science in Mechanical Engineering. I am proud to be an alumni of this program, as it has been  
                             <a target="blank" href="https://eng.auburn.edu/news/2022/09/college-earns-top-usnews-rankings-again#:~:text=The%20publication%2C%20which%20ranks%20undergraduate,centered%20engineering%20experience%20in%20America."> ranked among the nation's top
                             35 public institutions for the 12th-consecutive year in a row.</a>
-                            <a href=""></a>
                             <br></br>
                             <br></br>
                             My most recent studies began in late 2021 with an 
